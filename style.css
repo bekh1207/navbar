@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.midea-header-main{
+    display: none;
+}
+@media only screen and (max-width: 600px){
+ .midea-header-main {
+    display: flex;
+ }   
+ .midea-header-main .media-header .media-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+ }
+ .midea-header-main .media-header .media-navbar .media-icon-container {
+    margin-left: 380px;
+ }
+ .midea-header-main .media-header .media-navbar .media-icon-container .icon-container i {
+    font-size: 30px;
+    color: #fff;
+ }
+ .midea-header-main .media-header .media-navbar .media-logo h1 {
+    color: #fff;
+ }
+ .midea-section-main {
+    display: flex!important;
+    opacity: 0;
+ }
+ #btn2 {
+    display: none;
+ }
+ .midea-section-main .midea-section .midea-container {
+    width: 430px;
+    background-color: white;
+    height: 86vh;
+    margin-left: 30px;
+    margin-top: -18px;
+    border-radius: 10px;
+ }
+ .midea-section-main .midea-section .midea-container .midea-ul-list {
+    list-style: none;
+    margin-left: 20px;
+ }
+ .midea-section-main .midea-section .midea-container .midea-ul-list .midea-li-list {
+    margin: 30px 0px;
+    position: relative;
+ }
+ .midea-section-main .midea-section .midea-container .midea-ul-list .midea-li-list::before {
+    position: absolute;
+    content: '';
+    width: 0;
+    bottom: 0;
+    height: 2px;
+    right: 0;
+    left: 0;
+    background-color: orange;
+    transition: all .5s ease;
+ }
+ .midea-section-main .midea-section .midea-container .midea-ul-list .midea-li-list:hover::before{
+    width: 90%;
+ }
+ 
+}
+.midea-section-main {
+    display: none;
+}
+body {
+    background-color: violet;
+}
